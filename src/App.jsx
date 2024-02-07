@@ -51,7 +51,8 @@ function App() {
                 }}
             >
                 <div style={{ fontSize: 56, fontWeight: 500, textAlign: "center", fontFamily: "sans-serif" }}>
-                    TAYREMAN
+                    «Tyreman» <br />
+                    Detector data processor (Wialon Combine)
                 </div>
                 <Space.Compact>
                     <Input.Search
