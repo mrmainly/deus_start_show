@@ -1,9 +1,9 @@
 version: "3"
 
 services:
-    global_air:
+    deus_det_front:
         build:
             context: .
         restart: always
         ports:
-            - "3034:3000"
+            - "3232:80"
