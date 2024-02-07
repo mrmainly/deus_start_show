@@ -1,4 +1,5 @@
-import { Descriptions, Typography, Table, Spin, Input, Space, Button, message } from "antd";
+import { Descriptions, Typography, Table, Spin, Input, Space } from "antd";
+import moment from "moment";
 import { useState } from "react";
 
 import { useGetDeviceQuery } from "./api/api";
@@ -83,6 +84,9 @@ function App() {
                         </Descriptions.Item>
                         <Descriptions.Item label="Высота над уровнем моря (ALT)">
                             {!error && data?.last_packet.alt}
+                        </Descriptions.Item>
+                        <Descriptions.Item label="Дата и время">
+                            {!error && moment(data?.last_packet.date).format("DD.MM.YYYY, HH:mm")}
                         </Descriptions.Item>
                     </Descriptions>
                 </div>
