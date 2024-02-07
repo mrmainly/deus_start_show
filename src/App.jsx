@@ -90,7 +90,12 @@ function App() {
                     <Title level={4} style={{ marginBottom: 20 }}>
                         Шины
                     </Title>
-                    <Table columns={columns} dataSource={error ? [] : data?.tyres_data} key="detector_id" />
+                    <Table
+                        columns={columns}
+                        dataSource={error ? [] : data?.tyres_data}
+                        key="detector_id"
+                        pagination={false}
+                    />
                 </div>
             </div>
         </div>
